@@ -38,6 +38,7 @@ const questions = [
 ];
 
 //starting quiz
+let score = 0;
 
 let btnStart = document.getElementById('start');
 let btnNext = document.getElementById('next');
@@ -50,13 +51,14 @@ btnStart.addEventListener('click', (event) => {
 currentIndex = 0;
 
 function handleClick() {
-  if(currentIndex>=4){
-    alert("its over");
-    currentIndex=0;
+  if (currentIndex >= 4) {
+    alert(`its over you got ${score}points of 4 points`);
+    currentIndex = 0;
+    score = 0;
   }
 
-  let answer = document.getElementById('answers');
-  answer.innerText = "";
+  let answers = document.getElementById('answers');
+  answers.innerText = "";
 
   let questionBtn = document.getElementById('question');
   let myAnswers = questions[currentIndex].answers;
@@ -64,10 +66,34 @@ function handleClick() {
   myAnswers.forEach(element => {
     let newButton = document.createElement('BUTTON')
     newButton.textContent = element.text
+    newButton.title = element.correct;
     newButton.classList.add('btn')
-    answer.appendChild(newButton)
+    answers.appendChild(newButton)
+    // console.log(newButton.title);
+
   })
   currentIndex += 1;
+
+}
+
+let answers = document.getElementById('answers');
+answers.addEventListener('click', (element) => {
+  // console.log(element.target.disabled);
+  let text = element.target.title;
+  if (text === "true") {
+    element.target.style.backgroundColor = "green";
+    score += 1;
+  } else {
+    element.target.style.backgroundColor = "yellow";
+  }
+  handleEnable();
+})
+function handleEnable() {
+  let answers = document.querySelectorAll('.btn');
+  answers.forEach(element => {
+    element.disabled=true;
+    
+  });
   
 }
 
