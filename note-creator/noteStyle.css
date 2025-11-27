@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  background: #002339;
+  color: #fff;
+}
+
+.btnmain {
+  border-radius: 30px;
+  width: 120px;
+  margin-top: 20px;
+  background-color: rgb(129, 52, 125);
+}
+
+.eachBox {
+  width: 300px;
+  height: auto;
+  position: relative;
+
+}
+
+.areaBox {
+  width: 300px;
+  min-height: 100px;
+  margin-top: 20px;
+  padding: 5px;
+  color: blue;
+}
+
+#notes {
+  display: flex;
+  flex-direction: column;
+}
+
+.del {
+  position: absolute;
+  cursor: pointer;
+  width: 30px;
+  bottom: 10px;
+  right: 6px;
+}
