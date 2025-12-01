@@ -12,21 +12,23 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=
 Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a48c7a1822.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <div class="container-fluid main ">
-    <button type="button" class="btn btn-primary shadow ">success</button>
-    <button type="button" class="btn btn-primary shadow">error</button>
-    <button type="button" class="btn btn-primary shadow">invalid</button>
-    
+    <button type="button" class="btn btn-primary shadow" onclick= "createToast(successMsg)">success</button>
+    <button type="button" class="btn btn-primary shadow" onclick= "createToast(errorMsg)">error</button>
+    <button type="button" class="btn btn-primary shadow" onclick= "createToast(invalidsMsg)">invalid</button>
+
     <div class="toastBox shadow-lg" id="toasts">
       <!-- <div class="toast show">
         <div class="toast-header">
-          <h4>makin</h4>
+          <h4 class="progress">makin</h4>
         </div>
       </div> -->
     </div>
+    
   </div>
 
 
@@ -34,7 +36,7 @@ Oswald:wght@200..700&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
     </script>
-  <script>
+  <!-- <script>
     document.getElementById("toastbtn").onclick = function () {
       var toastElList = [].slice.call(document.querySelectorAll('.toast'))
       var toastList = toastElList.map(function (toastEl) {
@@ -42,7 +44,7 @@ Oswald:wght@200..700&display=swap" rel="stylesheet">
       })
       toastList.forEach(toast => toast.show())
     }
-  </script>
+  </script> -->
 </body>
 
 </html>
