@@ -20,16 +20,12 @@ createButton.addEventListener('click', (element) => {
   let delButton = document.createElement('img');
   delButton.src = "/note-creator/icons8-delete-48.png";
   delButton.classList.add('del');
-  delButton.onclick = handleDelete;
+  // delButton.onclick = handleDelete;
   newDiv.appendChild(delButton);
   saveData();
 })
 
-function handleDelete(e) {
-  e.target.parentElement.remove();
-  saveData();
 
-}
 
 let items = document.getElementById('notes');
 function saveData() {
@@ -42,4 +38,12 @@ function showTask() {
 
 showTask();
 
+let delbutton = document.getElementById('notes');
+delbutton.addEventListener('click', (item) => {
+  console.log(item.target);
+  if (item.target.tagName === 'IMG') {
+    item.target.parentElement.remove();
+    saveData();
+  }
 
+})

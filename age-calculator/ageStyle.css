@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  background: #940afd;
+  color: #fff;
+  margin-top: 100px;
+}
+
+h1 {
+  color: yellow;
+}
+
+.mainBox {
+  width: 500px;
+  height: 80px;
+  background-color: rgb(190, 163, 230);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  border: 0;
+  position: relative;
+  
+}
+.mainBox input{
+  width: 60%;
+}
+.calcbutt{
+  width: 100px;
+}
+.calImg{
+  position: absolute;
+  bottom: 22px;
+  right: 170px;
+  cursor: pointer;
+}
+.inp{
+  cursor: pointer;
+}

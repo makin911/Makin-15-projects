@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  background: #940afd;
+  color: #000000;
+  margin-top: 100px;
+}
+
+.quoteBox {
+  padding: 20px;
+  width: 500px;
+  background-color: white;
+  line-height: 3;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+}
+
+.btnStyle {
+  border-radius: 30px;
+  width: 100px;
+}
+
+.spanBox {
+  display: flex;
+  justify-content: end;
+  text-align: end;
+  height: 50px;
+  width: auto;
+  position: relative;
+}
+span{
+  position: relative;
+  padding-left: 20px;
+}
+span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 15px;       /* line length */
+  height: 1px;       /* line thickness */
+  background: #6200ff;  /* line color */
+}
+
+h1::after {
+  content: '';
+  width: 75px;
+  background-color: blue;
+  height: 3px;
+  position: absolute;
+  left: 40%;
+  top: 25%;
+}
+
+blockquote::before,
+blockquote::after {
+  content: '"';
+}
+
+blockquote {
+  text-align: center;
+}

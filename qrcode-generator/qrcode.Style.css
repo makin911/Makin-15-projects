@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  background: #2d2634;
+  color: #000000;
+  margin-top: 100px;
+}
+.mainBox{
+  width: 300px;
+  background-color: white;
+  padding: 20px;
+  line-height: 3;
+  display: flex;
+  flex-direction: column;
+}
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgBox{
+  width: 200px;
+  border-radius: 5px;
+  
+}
+.imgBox img{
+  width: 100%;
+  padding: 10px;
+}
+#imgBox.show-img{
+  margin: 10px auto;
+  border: 1px solid #d1d1d1;
+}
