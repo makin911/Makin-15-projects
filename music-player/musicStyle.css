@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  background: rgb(86, 83, 83);
+  color: #000000;
+  margin-top: 70px;
+}
+
+.main {}
+
+.musicPlayer {
+  width: 300px;
+  background-color: rgb(246, 204, 235);
+  border-radius: 5px;
+}
+
+.btn {
+  background: white;
+  color: rgb(230, 176, 176);
+  border: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.inpBox {
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#progress {
+  -webkit-appearance: none;
+  background-color: rgb(252, 6, 194);
+  height: 5px;
+  border-radius: 5px;
+  
+}
+
+.conBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.conBox i {
+  color: rgb(252, 6, 194);
+}
+
+.controls div:nth-child(2) {
+  width: 70px;
+  height: 55px;
+}
+
+.conBox:hover {
+  background-color: rgb(252, 216, 244);
+  opacity: 0.7;
+}

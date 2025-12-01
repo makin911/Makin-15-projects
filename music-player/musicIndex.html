@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>music-player</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="/music-player/musicStyle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=
+Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a48c7a1822.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container-fluid d-flex justify-content-center">
+    <div class="musicPlayer text-center p-3">
+      <div class="d-flex justify-content-between p-3">
+        <button class="btn btn-primary rounded-circle"><i class="fa-solid fa-angle-left "></i></button>
+        <button class="btn btn-primary rounded-circle"><i class="fa-solid fa-bars circle"></i></button>
+      </div>
+      <div class="mx-auto p-2 bg-primary rounded-circle w-50">
+        <img src="/music-player/images/baner.jpg" alt="" class="w-100 rounded-circle ">
+      </div>
+      <div class="text-center">
+        <h3>despacito</h3>
+        <p>luis fonsi ft. puero ricon</p>
+      </div>
+      <audio  class="w-75" id="song">
+        <source src="/music-player/Luis Fonsi - Despacito.mp3">
+      </audio>
+      <input type="range" value="0" class="w-75 inpBox " id="progress">
+      <div class="d-flex gap-3 justify-content-center align-items-center controls mt-3">
+        <div class="conBox ">
+          <i class="fa-solid fa-backward"></i>
+        </div>
+        <div class="conBox" id="ctrlIcon">
+          <i class="fa-solid fa-play" ></i>
+        </div>
+        <div class="conBox">
+          <i class="fa-solid fa-forward"></i>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <script src="/music-player/musicJs.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
